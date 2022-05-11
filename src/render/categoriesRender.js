@@ -1,5 +1,5 @@
 import { initialState } from "../initialState";
-import { getNewsByCat } from "../getCategories"
+import { getNewsByCat } from "../getNewsByCategory"
 
 export const renderCats = () => {
   const root = document.getElementById("root");
@@ -17,7 +17,7 @@ export const renderCats = () => {
 
     categoriesItem.addEventListener("click", () => getNewsByCat(cats._id));
 
-    categoriesList.append(li);
+    categoriesList.append(categoriesItem);
   });
 
   rightSidebar.append(categoriesList);
