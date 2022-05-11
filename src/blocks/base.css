@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/OpenSans-Regular.eot");
+  src: url("../../assets/OpenSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/OpenSans-Regular.woff2") format("woff2"),
+    url("../../assets/OpenSans-Regular.woff") format("woff"),
+    url("../../assets/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/OpenSans-Bold.eot");
+  src: url("../../assets/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/OpenSans-Bold.woff2") format("woff2"),
+    url("../../assets/OpenSans-Bold.woff") format("woff"),
+    url("../../assets/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 18px;
+}
