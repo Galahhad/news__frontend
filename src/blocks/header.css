@@ -8,24 +8,34 @@
     z-index: 10000;
 }
 .header_info {
-    width: 60%;
+    width: 100%;
     background-color: white;
     z-index: 10000;
     text-align: center;
     padding-top: 35px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     font-style: italic;
     color: rgba(128, 128, 128, 0.669);
     cursor: default;
 }
 .header_logo_wrap {
-    width: 40%;
+    width: 35%;
     height: 110px;
     background-color: #e60007;
     position: relative;
-    overflow: hidden;
+}
+
+.header_logo_wrap::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -100px;
+    width: 100px;
+    height: 100%;
+    background-color: black;
     border-radius: 0 0 100px 0;
+    background-color: #e60007;
 }
 
 .header_logo_wrap img {
@@ -33,4 +43,8 @@
     margin-left: 60px;
     width: 350px;
     cursor: pointer;
+}
+.logo_main {
+    width: 70%;
+    background-color: white;
 }

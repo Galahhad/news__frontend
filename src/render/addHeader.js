@@ -13,11 +13,15 @@ export const addHeader = () => {
     headerLogo.src = dailyBugleImg;
     headerLogo.alt = "Daily Bugle Logo";
 
+    const logoMain = document.createElement("div");
+    logoMain.classList.add("logo_main");
+
     const headerInfo = document.createElement("div");
     headerInfo.classList.add("header_info");
     headerInfo.textContent = "\"У нас самые правдивые новости.\""
 
     root.append(headerWrap);
-    headerWrap.append(headerLogoWrap, headerInfo);
+    headerWrap.append(headerLogoWrap, logoMain);
+    logoMain.append(headerInfo);
     headerLogoWrap.append(headerLogo);
 }

@@ -1,11 +1,14 @@
 import { initialState } from "../initialState";
-import { getNewsByCat } from "../getNewsByCategory"
+import { getNewsByCat } from "../getNewsByCategory";
+import { getNews } from "../getNews";
 
 export const renderCats = () => {
   const rightBar = document.querySelector('.right_bar')
 
   const categoriesList = document.createElement("ul");
   categoriesList.className = "categories_list";
+
+  
 
   initialState.cat.forEach((cats) => {
     const categoriesItem = document.createElement("li");
@@ -18,6 +21,12 @@ export const renderCats = () => {
   });
 
   rightBar.append(categoriesList);
+
+  const clickNews = document.querySelector(".all_news_button");
+
+  clickNews.addEventListener("click", () => {
+    getNews();
+  })
 
 };
 

@@ -38,8 +38,22 @@
 .right_bar {
     border: 3px solid;
     width: 15%;
+    position: relative;
 }
 .category_title {
     padding-top: 10px;
     padding-left: 10px;
+}
+.all_news_button {
+    cursor: pointer;
+    padding-top: 12px;
+    padding-left: 20px;
+    transition: .4s;
+}
+.all_news_button:hover {
+    color: #e60007;
+    text-decoration: underline;
+}
+.all_news_button:active {
+    transform: scale(0.98);
 }

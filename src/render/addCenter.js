@@ -42,10 +42,14 @@ export const addCenter = () => {
     categoryTitle.textContent = "Категории";
     categoryTitle.classList.add("category_title");
 
+    const allNewsButton = document.createElement("div");
+    allNewsButton.classList.add("all_news_button");
+    allNewsButton.textContent = "Все новости";
+    
     headerWrap.after(centerWrap);
     centerWrap.append(leftBar, newsContainer, rightBar);
     newsContainer.append(newsTitle, newsSave);
-    rightBar.append(categoryTitle)
+    rightBar.append(categoryTitle, allNewsButton);
     leftBar.append(leftImgWrap);
     leftImgWrap.append(jamesonImg, jamesonQuote);
     jamesonQuote.append(jamesonAuthor);
