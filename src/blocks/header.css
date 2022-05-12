@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:3px solid #e60007;
+    z-index: 10000;
+}
+.header_info {
+    width: 60%;
+    background-color: white;
+    z-index: 10000;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.669);
+    cursor: default;
+}
+.header_logo_wrap {
+    width: 40%;
+    height: 110px;
+    background-color: #e60007;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 100px 0;
+}
+.header_logo_wrap img {
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 350px;
+    cursor: pointer;
+}

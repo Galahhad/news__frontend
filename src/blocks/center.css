@@ -1,0 +1,44 @@
+.center_wrap {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid;
+    padding: 7px;
+    min-height: 605px;
+}
+.left_bar {
+    width: 230px;
+    border: 3px solid;
+    height: 405px;
+}
+.jameson_img {
+    width: 100%;
+}
+.jameson_quote {
+    padding: 10px 10px 40px 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+    position: relative;
+    cursor: default;
+}
+.jameson_author {
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+}
+.news_container {
+    width: 68%;
+}
+.news_title {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.right_bar {
+    border: 3px solid;
+    width: 15%;
+}
+.category_title {
+    padding-top: 10px;
+    padding-left: 10px;
+}
