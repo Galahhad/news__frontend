@@ -33,17 +33,23 @@
     "webpack-dev-server": "^4.9.0"
   },
   "eslintConfig": {
-    "extends": [
-      "airbnb/base",
-      "prettier"
-    ],
     "rules": {
       "no-console": "off",
       "no-unused-vars": "warn"
     },
+    "root": true,
+    "extends": "eslint:recommended",
     "env": {
-      "browser": true,
-      "node": true
+      "es2020": true,
+      "node": true,
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
     }
   },
   "browserslist": "> 0.25%, not dead"
