@@ -1,4 +1,3 @@
-import "../blocks/center.css";
 import jamesonPng from "../../assets/Jameson_Img.png";
 
 export const addCenter = () => {
@@ -33,6 +32,9 @@ export const addCenter = () => {
     newsTitle.classList.add("news_title");
     newsTitle.textContent = "Новости";
 
+    const newsSave = document.createElement('div')
+    newsSave.classList.add('news__save')
+
     const rightBar = document.createElement("div");
     rightBar.classList.add("right_bar");
 
@@ -42,7 +44,7 @@ export const addCenter = () => {
 
     headerWrap.after(centerWrap);
     centerWrap.append(leftBar, newsContainer, rightBar);
-    newsContainer.append(newsTitle);
+    newsContainer.append(newsTitle, newsSave);
     rightBar.append(categoryTitle)
     leftBar.append(leftImgWrap);
     leftImgWrap.append(jamesonImg, jamesonQuote);

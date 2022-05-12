@@ -2,27 +2,30 @@ import img from "../../assets/spider-man-1.jpg";
 import { initialState } from "../initialState";
 import { getNewsById } from "../getNewsById";
 
-const newsWrapper = document.querySelector(".news_container");
-
 export const render = () => {
   // main.textContent = "";
+  const newsSave = document.querySelector(".news__save");
+
+  const allNewsContainer = document.createElement("div");
+  allNewsContainer.classList.add("all-news__container");
 
   if (Array.isArray(initialState.news)) {
-    // main.textContent = "";
+    newsSave.textContent = "";
 
     initialState.news.forEach((news) => {
-      const newsContent = document.createElement("div");
-      newsContent.classList.add("news_content");
-      newsContent.textContent = news.title;
+      const newsItem = document.createElement("div");
+      newsItem.classList.add("news__item");
+      newsItem.textContent = news.title;
 
-      newsContent.addEventListener("click", () => {
+      newsItem.addEventListener("click", () => {
         getNewsById(news._id);
       });
 
-      newsWrapper.append(newsContent);
+      allNewsContainer.append(newsItem);
+      newsSave.append(allNewsContainer);
     });
   } else {
-    newsWrapper.textContent = "";
+    newsSave.textContent = "";
 
     const oneNewsContainer = document.createElement("div");
     oneNewsContainer.classList.add("one-news__container");
@@ -36,9 +39,9 @@ export const render = () => {
 
     oneNewsContainer.append(newsImage, newsContent);
 
-    const newsTitle = document.createElement("h1");
-    newsTitle.classList.add("news__title");
-    newsTitle.textContent = initialState.news.title;
+    const newsSubtitle = document.createElement("h1");
+    newsSubtitle.classList.add("news__subtitle");
+    newsSubtitle.textContent = initialState.news.title;
 
     const newsCategory = document.createElement("div");
     newsCategory.classList.add("news__category");
@@ -48,7 +51,7 @@ export const render = () => {
     newsText.classList.add("news__text");
     newsText.textContent = initialState.news.text;
 
-    newsContent.append(newsTitle, newsCategory, newsText);
+    newsContent.append(newsSubtitle, newsCategory, newsText);
 
     const commentsContainer = document.createElement("div");
     commentsContainer.classList.add("comments__container");
@@ -56,6 +59,6 @@ export const render = () => {
     const commentsList = document.createElement("ul");
     commentsList.classList.add("comments__list");
 
-    newsWrapper.append(oneNewsContainer);
+    newsSave.append(oneNewsContainer);
   }
 };

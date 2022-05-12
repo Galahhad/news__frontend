@@ -1,4 +1,3 @@
-import "../blocks/footer.css";
 export const addFooter = () => {
     const centerWrap = document.querySelector(".center_wrap");
 

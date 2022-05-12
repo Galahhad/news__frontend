@@ -1,0 +1,23 @@
+.category_title {
+    cursor: default;
+}
+
+.categories_list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.categories_item {
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.categories_item:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.categories_item:active {
+    transform: scale(0.98);
+}

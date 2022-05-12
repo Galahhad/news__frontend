@@ -6,6 +6,6 @@ export const getNews = () => {
     .then((res) => res.json())
     .then((news) => {
       initialState.news = news;
-      render(news);
+      render();
     });
 };

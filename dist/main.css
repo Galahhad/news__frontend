@@ -1,0 +1,16 @@
+/*!********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./blocks/base.css ***!
+  \********************************************************************/@font-face{font-display:swap;font-family:Open Sans;font-style:normal;font-weight:400;src:url(24c454439759e2c6a774.eot);src:url(24c454439759e2c6a774.eot?#iefix) format("embedded-opentype"),url(3ef06ba3c7099e63c9ce.woff2) format("woff2"),url(6c5acfa99c83633bb078.woff) format("woff"),url(1f7e89e42abf83356358.ttf) format("truetype")}@font-face{font-display:swap;font-family:Open Sans;font-style:normal;font-weight:700;src:url(7f1596ccd3a68545250f.eot);src:url(7f1596ccd3a68545250f.eot?#iefix) format("embedded-opentype"),url(f3e79b3d83d8a599df08.woff2) format("woff2"),url(eb8f357f58267539eb7b.woff) format("woff"),url(a19e320281056a1b867d.ttf) format("truetype")}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Playfair Display,sans-serif;font-size:18px}
+
+/*!**********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./blocks/header.css ***!
+  \**********************************************************************/.header{border-bottom:3px solid #e60007;display:flex;justify-content:space-between;position:fixed;top:0;width:100%;z-index:10000}.header_info{background-color:#fff;color:hsla(0,0%,50%,.669);cursor:default;font-size:40px;font-style:italic;font-weight:700;padding-top:35px;text-align:center;width:60%;z-index:10000}.header_logo_wrap{background-color:#e60007;border-radius:0 0 100px 0;height:110px;overflow:hidden;position:relative;width:40%}.header_logo_wrap img{cursor:pointer;margin-left:60px;margin-top:20px;width:350px}
+/*!**********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./blocks/center.css ***!
+  \**********************************************************************/.center_wrap{border:3px solid;display:flex;justify-content:space-between;margin-top:120px;padding:7px}.left_bar{border:3px solid;height:405px;width:230px}.jameson_img{width:100%}.jameson_quote{color:gray;cursor:default;font-size:14px;font-style:italic;padding:10px 10px 40px;position:relative}.jameson_author{bottom:4px;position:absolute;right:5px}.news_container{width:68%}.news_title{padding-left:20px;padding-top:20px}.right_bar{border:3px solid;width:15%}.category_title{padding-left:10px;padding-top:10px}
+/*!**********************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./blocks/footer.css ***!
+  \**********************************************************************/.footer{background-color:#252527;bottom:0;position:absolute;width:100%}.info_wrap{align-items:center;color:#fff;display:flex;font-size:14px;justify-content:space-between;list-style:none;margin:auto;padding:30px 0;width:800px}.assets{width:180px}.info_wrap li{cursor:pointer;transition:.4s}.info_wrap li:hover{color:#e60007;text-decoration:underline}.info_wrap li:active{transform:scale(.95)}
+/*!**************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./style.css ***!
+  \**************************************************************/

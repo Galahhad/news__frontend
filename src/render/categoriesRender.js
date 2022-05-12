@@ -2,10 +2,7 @@ import { initialState } from "../initialState";
 import { getNewsByCat } from "../getNewsByCategory"
 
 export const renderCats = () => {
-  const root = document.getElementById("root");
-
-  const rightSidebar = document.createElement("div");
-  rightSidebar.className = "categories__sidebar";
+  const rightBar = document.querySelector('.right_bar')
 
   const categoriesList = document.createElement("ul");
   categoriesList.className = "categories_list";
@@ -20,8 +17,7 @@ export const renderCats = () => {
     categoriesList.append(categoriesItem);
   });
 
-  rightSidebar.append(categoriesList);
+  rightBar.append(categoriesList);
 
-  root.append(rightSidebar);
 };
 

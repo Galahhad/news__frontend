@@ -1,1 +1,7 @@
 @import url("./blocks/base.css");
+
+@import url("./blocks/header.css");
+@import url("./blocks/center.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/news.css");
+@import url("./blocks/cats.css");
