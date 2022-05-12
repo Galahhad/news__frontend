@@ -1,4 +1,3 @@
-import "../blocks/header.css";
 import dailyBugleImg from "../../assets/Daily_Bugle.png";
 
 export const addHeader = () => {
